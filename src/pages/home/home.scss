@@ -1,0 +1,102 @@
+page-home {
+    .menu-btn{
+        height: 27px;
+        font-size: 12px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .logo{
+        height: 25px;
+        margin-top: 5px;
+    }
+    .checkout-btn{
+        margin-right: 5px;
+        img{
+            height: 18px;
+        }
+    }
+
+    .searchbar{
+        background-color: #000;
+    }
+
+    .category-header{
+        p,h1{
+            margin: 0;
+        }
+    }
+
+    .item{
+        width: 50%;
+        float: left;
+        padding: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;    
+    }
+        .item__wrapper{
+            border-radius: 3px;
+            overflow: hidden;
+            border: 1px solid #EEE;
+            position: relative;
+            .heart{
+                position: absolute;
+                height: 20px;
+                top: 15px;
+                left: 15px;
+                opacity: 0.2;
+                z-index: 1;
+            }
+        }
+
+        .item__image-placeholder{
+            height: 215px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            .discount{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                font-size: 10px;
+                background-color: #ec765d;
+                color: #FFF;
+                padding: 2px 5px;
+                text-transform: uppercase;
+            }
+        }
+            .item__image-placeholder img{
+                height: 100%;
+                max-width: 100%;
+            }
+        .item__details{
+            padding: 10px;
+        }
+
+        .item p{
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: block; /* Fallback for non-webkit */
+            display: -webkit-box;
+        }
+        .item h1{
+            font-size: 16px;
+            margin: 0;
+        }
+
+    .stack{
+        overflow: visible;
+        position: fixed;
+        bottom: 0;
+        height: 65px;
+        width: 100%;
+        z-index: 999993;
+        padding: 0 15px 15px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}

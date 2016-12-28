@@ -1,0 +1,47 @@
+<ion-header>
+	<ion-navbar>
+		<ion-buttons start>
+			<button ion-button class="menu-btn" color="dark" outline>MENU</button>
+		</ion-buttons>
+		<ion-title> <img class="logo" src="./assets/logo-splash.svg"></ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only class="checkout-btn">
+				<img src="./assets/shopping-bag.svg">
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+	<ion-searchbar class="searchbar"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+
+	
+
+	<div class="category-header" padding>
+		<p>Women`s/</p>
+		<h1>DRESSES <small style="float:right; font-weight: normal; font-size: 14px; color: #CCC; padding-top: 7px;">37 Products</small> </h1>
+		
+	</div>
+
+
+	<div class="item" *ngFor="let item of items" (click)="openItem(item)">
+		<div class="item__wrapper">
+			<img class="heart" src="./assets/heart.svg" alt="">
+			<div class="item__image-placeholder">
+				<img src="{{item.imageUrl}}">
+				<span class="discount" *ngIf="item.discount"> {{item.discount}} </span>
+			</div>
+			<div class="item__details">
+				<p>{{item.name}}</p>
+				<h1>{{item.price}}</h1>
+			</div>
+
+		</div>
+	</div>
+
+</ion-content>
+
+<div class="stack">
+	<!--<item [itemData]="items[0]"></item>-->
+	<item *ngFor="let item of stackItems" [itemData]="item" [ngStyle]="{'order': item.orderIndex}"></item>
+</div>

@@ -1,0 +1,100 @@
+<div class="item-details__image-wrapper" #itemDetailsImageWrapper>
+
+    <div class="item-details__controls">
+        <button class="close-button" clear color="dark" ion-button icon-left>
+            <ion-icon name="md-close"></ion-icon>
+        </button>
+        <button class="minimize-button" clear color="dark" ion-button icon-left>
+            <ion-icon name="ios-arrow-down-outline"></ion-icon>
+        </button>
+    </div>
+
+    <img src="{{itemData.imageUrl}}">
+</div>
+
+
+
+<div class="item-details" #itemDetails>
+
+
+
+    <div class="item-details__content">
+        <h5>{{itemData.name}}</h5>
+        <h4>{{itemData.price}}</h4>
+
+        <p>
+            <span color="danger"> Save AED 48(40%) </span>
+            <span color="muted"> - Earn 7 Shukrans <ion-icon name="ios-information-circle-outline"></ion-icon> </span>
+        </p>
+
+        <hr>
+
+        <div class="section overview">
+            <h5>Overview</h5>
+
+            <ion-grid class="overview-grid">
+                <ion-row>
+                    <ion-col width-50>
+                        <ul>
+                            <li><b>Design :</b> Textured</li>
+                            <li><b>Model Wears :</b> Size S</li>
+                            <li><b>Length :</b> Mini</li>
+                            <li><b>Care Information :</b> Machine Wash</li>
+                        </ul>
+                    </ion-col>
+                    <ion-col width-50>
+                        <ul>
+                            <li><b>Model Stats :</b> Bust 87 cm, Waist 63 cm, Hips 93 cm, Height 180 cm</li>
+                            <li><b>Model Wears :</b> Size S</li>
+                            <li><b>Sleeve Length :</b> Sleeveless</li>
+                            <li><b>Type :</b> Casual</li>
+                        </ul>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+
+        <div class="section colour">
+            <h5>Colour</h5>
+            <img src="{{itemData.imageUrl}}">
+        </div>
+
+        <hr>
+
+        <div class="section size">
+            <h5>Size</h5>
+            <ul>
+                <li class="active">XS</li>
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+            </ul>
+        </div>
+
+        <button class="add-to-basket">Add to Basket</button>
+
+        <hr>
+
+        <div class="section size">
+            <h5>Customer Also Viewed</h5>
+            <div class="empty-block"></div>
+            <div class="empty-block"></div>
+            <div class="empty-block"></div>
+        </div>
+        <div class="section size">
+            <h5>You May Also like</h5>
+            <div class="empty-block"></div>
+            <div class="empty-block"></div>
+            <div class="empty-block"></div>
+        </div>
+
+        <div class="section size">
+            <h5>Reviews</h5>
+            <div class="empty-block"></div>
+            <div class="empty-block"></div>
+            <div class="empty-block"></div>
+            <div class="empty-block half"></div>
+        </div>
+    </div>
+</div>
